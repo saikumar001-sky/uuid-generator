@@ -20,5 +20,9 @@ export function generateUUID(number) {
       bulkUUIDs.push(generateBulkUUID());
     }
     return bulkUUIDs;
+  } else {
+    const bulkUUIDs = [];
+    bulkUUIDs.push(generateBulkUUID());
+    return bulkUUIDs;
   }
 }

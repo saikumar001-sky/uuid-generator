@@ -1,0 +1,25 @@
+{
+  "name": "uuidx4-generator",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/uuid-generator.umd.cjs",
+  "module": "./dist/uuid-generator.js",
+  "exports": {
+    ".": {
+      "import": "./dist/uuid-generator.js",
+      "require": "./dist/uuid-generator.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.4"
+  }
+}
